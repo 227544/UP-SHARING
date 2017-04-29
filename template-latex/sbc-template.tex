@@ -2,8 +2,13 @@
 \usepackage{sbc-template}
 \usepackage{graphicx,url}
 \usepackage[export]{adjustbox}
-\usepackage[brazil]{babel}   
-\usepackage[latin1,utf8]{inputenc}  
+\usepackage[latin1,utf8]{inputenc}
+\usepackage[nottoc]{tocbibind}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{hyphenat}
+\hyphenation{mate-mática recu-perar}
+
 \graphicspath{{img/}}
 
 \sloppy
@@ -27,19 +32,7 @@ This software engineering project, which will be available for mobile devices, w
      
 \begin{resumo} 
 
-Esse projeto de engenharia de software, que estará disponível para dispositivos móveis, com acesso à infraestrutura em nuvem visa suprir uma necessidade da montadora em fornecer serviço de locação para uma linha específica de veículos, muito usada em locação de modo compartilhado.  Este tipo de locação possibilita diversos ganhos econômicos, sociais e ambientais. 
-
-\end{resumo}
-
-
-\section{Introdução ao Projeto}
-
-Esse projeto de engenharia de software, que estará disponível para dispositivos móveis, com acesso à infraestrutura em nuvem. Visa suprir uma necessidade da montadora em fornecer serviço de locação para uma linha específica de veículos, muito usada em locação de modo compartilhado. Este tipo de locação possibilita diversos ganhos econômicos, sociais e ambientais.
-
-Entende-se locação compartilhada (CAR SHARING) como a forma de utilização comunitária de um mesmo veículo como meio de transporte dada a sua disponibilidade. Este termo é utilizado para definir um modelo de aluguel de veículos em que o cliente aluga o carro para uma quantidade específica ou para uso rápido, com um conceito de autos serviço, em que o cliente é independente e autônomo na utilização do serviço.
-
-\section{Condições e características importantes}
-
+Esse projeto de engenharia de software, que estará disponível para dispositivos móveis, com acesso à infraestrutura em nuvem visa suprir uma necessidade da montadora em fornecer serviço de locação para uma linha específica de veículos. Este tipo de locação possibilita diversos ganhos econômicos, sociais e ambientais. 
 Os requisitos deverão ser os funcionais e não funcionais, deixando claro quais são seus objetivos. Deve permitir desde já a sua rastreabilidade, bem como descrever os  atores. Elaborar um modelo de processo que contemple as necessidades de configuração.
 Os itens de qualidade devem ser considerados quanto às funcionalidades   e tempos de resposta.
 Um modelo conceitual deverá ser feito, utilizando a notação UML – \textit{Unified Modeling Language}, com seus respectivos diagramas, fluxos de dados e interações.
@@ -51,63 +44,71 @@ Deverá ser considerado como serão feitos os testes de aceite, visando o produt
 Descrever as regras para eventuais mudanças nos requerimentos, elaborando uma Gestão de Mudanças.
 Quanto às ferramentas para as diversas atividades citadas será utilizado o que a empresa já utiliza no momento.
 
+\end{resumo}
+
+
+\section{Introdução ao Projeto}
+
+
+
+Entende-se locação compartilhada (CAR SHARING) como a forma de utilização comunitária de um mesmo veículo como meio de transporte dada a sua disponibilidade. Este termo é utilizado para definir um modelo de aluguel de veículos em que o cliente aluga o carro para uma quantidade específica ou para uso rápido, com um conceito de autos serviço, em que o cliente é independente e autônomo na utilização do serviço.
+
+\section{Condições e características importantes}
+
+vamos fazer ainda
+
 \section{Disciplinas do SWEBOK}
 \subsection{Requisitos}
 
-Estão envolvidos no processo os usuários finais, a fabricante dos veículos e a empresa locadora. Deve-se criar um comitê de representantes da locadora e do fabricante que irá interagir com um grupo de usuários convidados. Assim, os requisitos atenderão a todos os envolvidos, conforme \cite{Bourque2014}.  
-Quanto aos requisitos, será necessário elicitá-los, detalhá-los junto com dois tipos de usuários: aqueles que utilizarão o sistema e aqueles que tratarão da parte financeira. O artigo \textit{The Utility of Event-Based  Knowledge Elicitation}, propõe uma forma de elicitação de requisitos por vídeo, e vem de encontro ao propósito desse trabalho, principalmente gravando nos diversos estacionamentos e locais de locação, cujos requisitos serão elencados utilizando o método descrito nesse artigo.
-Assumindo a característica de inovação do projeto, bem como sua proposta de integração com o meio ambiente, o mesmo deverá preparar-se para a interoperabilidade com sistemas de iluminação de ruas efetuando a gravação de imagens durante o percurso dos carros e fazendo a identificação da iluminação presente. Seguindo o processo de \textbf{Pooya 2013}, as imagens poderão ser capturadas, processadas e transmitidas para os provedores de sistemas de iluminação, otimizando os custos de manutenção da rede. A ideia principal pode ser visualizada na figura 1. Dessa maneira ele pode transmitir para a cia quais luz estão queimadas, não tendo custo de manutenção, integrando junto à comunidade que ele atua. Com isso a  Volkswagem poderá reunir benefícios à marca.
+Estão envolvidos no processo os usuários finais, a fabricante dos veículos e a empresa locadora. Deve-se criar um comitê de representantes da locadora e do fabricante que irá interagir com um grupo de usuários convidados. Assim, os requisitos atenderão a todos os envolvidos, conforme o SWEBOK \cite{Swebok}.
+Quanto aos requisitos, será necessário elicitá-los, detalhá-los junto com dois tipos de usuários: aqueles que utilizarão o sistema e aqueles que tratarão da parte financeira. J. Fowlkes \cite{Fowlkes2000} propõe uma forma de elicitação de requisitos por vídeo, e vem de encontro ao propósito desse trabalho, principalmente gravando nos diversos estacionamentos e locais de locação, cujos requisitos serão elencados utilizando o método descrito em seu artigo.
+Assumindo a característica de inovação do projeto, bem como sua proposta de integração com o meio ambiente, o mesmo deverá preparar-se para a interoperabilidade com sistemas de iluminação de ruas efetuando a gravação de imagens durante o percurso dos carros e fazendo a identificação da iluminação presente. Seguindo o processo de Pooya \cite{Pooya}, as imagens poderão ser capturadas, processadas e transmitidas para os provedores de sistemas de iluminação, otimizando os custos de manutenção da rede. A ideia principal pode ser visualizada na figura \ref{fig:exampleFig1}. Dessa maneira, ele pode transmitir para a companhia de energia, quais luzes estão queimadas, não tendo custo de manutenção, integrando junto à comunidade que ele atua. Com isso a  Volkswagem poderá reunir benefícios à marca.
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=1.3] {swebok_requisitos.png}
-\caption{A ideia principal de monitoração e sensibilidade remota da rede de iluminação usando visão computadorizada e técnicas de processamento de imagem}
+\includegraphics[scale=.8] {swebok_requisitos.png}
+\caption{Monitoração remota com visão computadorizada}
 \label{fig:exampleFig1}
 \end{figure}
 
-\subsection{Design de Software}
+\subsection{Desenho do Software}
 
-Para desenhar o Sistema Volkswagen up! Sharing, utilizaremos uma arquitetura de software orientada a serviços (\textbf{SOA} - \textit{Service Oriented Architecture}) de forma a se ter um padrão (hoje muitos deles já existente na Organização) que seja possível a interoperabilidade e reuso de aplicações, independentemente de linguagens e plataformas de hardware ou software, que é uma diretriz da área de TI da Volkswagen. Conforme salienta o artigo Towards a Generic Governance Model for Service-oriented Architectures, quanto ao ciclo de vida SOA, nosso propósito é utilizar tal ciclo de vida. 
-Deverá ter uma visão estática e dinâmica conforme \cite{Bourque2014}, utilizando a notação UML com a ferramenta que a empresa oferece.
-
-
+Para desenhar o Sistema Volkswagen up! Sharing, utilizaremos uma arquitetura de software orientada a serviços \textbf{SOA} - \textit{Service Oriented Architecture} de forma a se ter um padrão, (hoje muitos deles já existente na organização) que seja possível a interoperabilidade e reuso de aplicações, independentemente de linguagens e plataformas de hardware ou software, que é uma diretriz da área de TI da Volkswagen. Conforme salienta Niemann \cite{Niemann2008}, quanto ao ciclo de vida SOA, nosso propósito é utilizar tal ciclo de vida. 
+Deverá ter uma visão estática e dinâmica conforme o SWEBOK \cite{Swebok}, utilizando a notação UML com a ferramenta que a empresa oferece.
 
 
 \subsection{Construção de Software}
 
-Dado a complexidade do sistema Volkswagen up! Sharing optamos por uma construção de metodologia de desenvolvimento misto, ou seja o ciclo de vida será  o Iterativo e incremental, cujas vantagens estão descritas no livro Princípios de Análise e Projeto de Sistemas com UML de\textbf{ Eduardo Bezerra – item 2.3.2, página 33 – Editora Campus – 2002.} 
+Dado a complexidade do sistema Volkswagen up! Sharing optamos por uma construção de metodologia de desenvolvimento Iterativo e incremental, cujas vantagens foram demonstradas por Eduardo Bezerra \cite{Bezerra}.
 O sistema será desenvolvido na linguagem JAVA e deverá ser desenvolvido de forma a atender os sistemas operacionais ANDROID e IOS.
-Os testes isolados serão feitos nessa fase, conforme SWEBOK – Chapter 3 – Software Constrution item 5.3 – Unit Testing Tools
+Os testes isolados serão feitos nessa fase, conforme SWEBOK \cite{Swebok}
 
 \subsection{Teste de Software}
 
-Para a execução dos testes  do sistema VOLKSWAGEN UP! SHARING, adotaremos testes dinâmicos  e testes finitos, dentro de critérios de seleção, conforme SWEBOK, Chapter 4. Para isso utilizaremos o descrito no artigo Improving the Software Quality by Designing an Effective Test Cases in Health Care Softwares, onde em seu item 2 – Material and Methods, aborda os testes para atender aos requisitos do sistema, conforme desenho abaixo:
+Para a execução dos testes  do sistema VOLKSWAGEN UP! SHARING, adotaremos testes dinâmicos  e testes finitos, dentro de critérios de seleção, conforme SWEBOK \cite{Swebok}. Para isso seguiremos ao exposto por I. Journal \cite{Journal2013}, onde em seu item 2 – \textit{Material and Methods}, aborda os testes para atender aos requisitos do sistema.
 
-OBSERVAÇÂO: OBTER DESENHO
+Como trata-se de um sistema que deve contemplar dois tipos de usuário: aquele que se utilizará do sistema e a parte financeira, conforme descrito no item 3.1 Requisitos, separaremos esses testes nas duas partes citadas, porém com o mesmo ciclo de vida, ou seja, haverá o \textit{Teste Life Cycle} para a parte financeira e outro \textit{Teste Life Cycle} para o propósito do sistema VOLKSWAGEN UP! SHARING seja avaliado pelos usuários finais seguindo as seguintes etapas.
 
-Como trata-se de um sistema que deve contemplar dois tipos de usuário: aquele que se utilizará do sistema e a parte financeira, conforme descrito no item 3.1 Requisitos, separaremos esses testes nas duas partes citadas, porém com o mesmo ciclo de vida, conforme   demonstra a figura 1, ou seja, haverá o Teste Life Cycle para a parte financeira e outro Teste Life Cycle para o propósito do sistema VOLKSWAGEN UP! SHARING (os usuários finais).
 
-Na figura temos:
+TEST PLAN PREPARATION: \\
+Onde temos o planejamento dos testes, como um Road Map, identificando todas as atividades dos testes. Apesar da empresa possuir ferramenta de automatização de testes, optamos por fazer os testes de requisitos funcionais manualmente a fim de garantir plenamente suas funcionalidades. \newline
+Nesse planejamento teremos os testes de Caminho Básico, conforme Pressman \cite{Pressman}, bem como a complexidade ciclomática, nos mostrando os caminhos independentes, garantindo dessa forma que todas as instruções foram executadas pelo menos uma vez. 
+Além disso, os testes integrados, testes de regressão, aceite e stress serão planejados. \newline
+Como nosso sistema também estará disponível nos celulares, tabletes, também será planejado os testes WebApp, como Pressman \cite{Pressman} nos mostra que deveremos fazer os testes de conteúdo, função, estrutura, usabilidade, navegabilidade entre outros.
 
-\textbf{Test Plan Preparation}
-Onde temos todo o planejamento dos testes, como um Road Map, identificando todas as atividades dos testes.  Apesar da empresa possuir ferramenta de automatização de testes, optamos por fazer os testes de requisitos funcionais manualmente a fim de garantir plenamente suas funcionalidades.
-Nesse planejamento teremos os testes de Caminho Básico, conforme Pressman – Chapter 18 – item 18.3 – White Box Testing  e 18.4 – Basis Path Testing – página 485, bem como nos dando a complexidade ciclomática , nos mostrando os caminhos independentes, garantindo dessa forma que todas as instruções foram executadas pelo menos uma vez. 
-Além disso, os testes integrados, testes de regressão, aceite e stress serão efetuados e planejados.
-Como nosso sistema também estará disponível nos celulares, tabletes, também será planejado os testes WebApp, cujos itens Pressman no capitulo 20 – Testing Web Applications – Item 20.1 Testing Concepts for WebApps nos mostra que deveremos fazer os testes de conteúdo, função, estrutura, Usabilidade, Navegabilidade entre outros.
+TEST CASE DESIGN: \\
+Processo onde selecionamos determinados dados de entrada e executamos o software numa determinada condição específica. Essas condições específicas ser apresentadas no plano \textit{Test Plan Preparation}.
 
-\textbf{Test Case Design}
-Processo onde selecionamos determinados dados de entrada e executamos o software numa determinada condição específica. (essas condições específicas deverão estar no plano (Test Plan Preparation).
-
-\textbf{Test Execution}
+TEST EXECUTION: \\
 Processo de execução dos casos de testes.
 
-\textbf{Teste Log Preparation}
+TEST LOG PREPARATION: \\
 Processo onde são preparados todos as possíveis saídas resultante de um conjunto de teste.
 
-\textbf{Defect Tracking}
-As falhas são rastreados, defeito por defeito para posteriormente gerar relatórios de defeitos.
+DEFECT TRACKING: \\
+As falhas são rastreadas, defeito por defeito para posteriormente gerar relatórios de defeitos.
 
-\textbf{Teste Report Genaration}
+TEST REPORT GENERATION: \\
 São relatórios que demostram todos os testes efetuados.
 
 
@@ -124,11 +125,11 @@ Considerando-se o item anterior e o fato de o sistema necessitar de interação 
 \label{fig:exampleFig2}
 \end{figure}
 
-Por fim, com a finalidade de se reduzir termos redundantes do processo de manutenção da aplicação por análise de feedback do usuário, deverão ser utilizadas as técnicas expostas por Oscar e Andrian 2016  (On the Reduction of Verbose Queries in Text Retrieval Based Software Maintenance) que visam remover termos específicos de consultas em contextos de conceitos baseados em Busca Testual, otimizando o emprego de informação gerada pelo usuário para levantamento de possíveis erros a serem manutenidos.
+Por fim, com a finalidade de se reduzir termos redundantes do processo de manutenção da aplicação por análise de feedback do usuário, deverão ser utilizadas as técnicas expostas por Oscar e Andrian 2016  (On the Reduction of Verbose Queries in Text Retrieval Based Software Maintenance) que visam remover termos específicos de consultas em contextos de conceitos baseados em Busca Textual, otimizando o emprego de informação gerada pelo usuário para levantamento de possíveis erros a serem manutenidos.
 
 \subsection{Gerenciamento de Configuração de Software}
 
-Dada a característica crítica e de segurança desta aplicação, o gerenciamento de configuração do mesmo deverá seguir os padrões aplicados pelo IEEE em seu documento 828-1983 (IEEE Standard for Software Configuration Management Plans). Isto visará o provimento de requisitos mínimos quando à preparação e criação de conteúdo do Plano de Gerenciamento de Configuração do Software.
+Dada a característica crítica e de segurança desta aplicação, o gerenciamento de configuração deverá seguir os padrões aplicados pelo IEEE em seu documento 828-1983 (IEEE Standard for Software Configuration Management Plans). Isto visará o provimento de requisitos mínimos quanto à preparação e criação de conteúdo do Plano de Gerenciamento de Configuração do Software.
 
 A ferramenta a ser utilizada neste processo será determinada de acordo com a teoria de conjunto difuso (fuzzy set) de análise. Desta maneira, a aplicação prática deste processo será a análise qualitativa e a utilização de um método de combinação calculado quantitativo, oferecendo flexibilidade na determinação do sistema de índice de avaliação e seu valor de pesos, como sugerido por Yongchang et al (Fuzzy Decision Analysis of the Software Configuration Management Tools Selection).
 
@@ -224,7 +225,12 @@ Como parâmetro decisório quanto ao julgamento de quando nosso software poderá
 \label{fig:exampleFig6}
 \end{figure}
 
-\bibliographystyle{sbc}
+\bibliographystyle{ieeetr}
 \bibliography{sbc-template}
+
+%\bibliographystyle{sbc}
+%\bibliography{sbc-template}
+
+
 
 \end{document}

@@ -27,6 +27,9 @@
 \begin{abstract}
 
 This software engineering project, which will be available for mobile devices, with access to the cloud infrastructure aims to meet a need for the automaker provide car sharing for a specific line of vehicles, widely used in shared lease. This type of rent allows several economic, social and environmental gains.
+The requirements should be functional and non-functional, making clear what your objectives are. It must enable traceability as well as describe the actors.
+Develop a process model that addresses the configuration needs. Quality items should be considered for functionality and response times. A conceptual model should be made using the UML - Unified Modeling Language notation, with its respective diagrams, inferred data and interactions.
+A system architecture solution must be derived from requirements gathering. Possible conflicts between users should be resolved through negotiation between the parties. A risk plan should be drawn up. Prototyping should be developed to validate the requirements elicited and raised. Acceptance testing with users should be considered. Describe the rules for any changes in requirements, drawing up a Change Management procedure. The tools for the various activities mentioned will be those used in the company
  
 \end{abstract}
      
@@ -55,7 +58,7 @@ Entende-se locação compartilhada (CAR SHARING) como a forma de utilização co
 
 \section{Condições e características importantes}
 
-vamos fazer ainda
+O artigo 6477- nos fala que o consumo colaborativo seria a reinvenção de antigos comportamentos mercantis e que é a chave dos comportamentos sociais e que oconsumo colaborativo pode ocorrer no âmbito digital, já que a Internet pode ser usada para conectar, formar grupos e encontrar algo ou pessoas que se interessam pelos mesmos assuntos. Ainda o artigo 6477 nos fala que que a Internet e as ferramentas sociais facilitaram a coordenação de ações em grupo. O engajamento e a vontade já existiam anteriormente à rede. É importante essa constatação, pois, no artigo. 5929 vem nos falar que o compartilhamento dentro das famílias tem existido por muitos e muitos anos. Dessa forma, se economiza tempo e dinheiro e vem de encontro ao nosso projeto que além de economizar tempo e dinheiro, está dentro de um contexto tecnológico arrojado. Onde será desenvolvido para atender a mobilidade das pessoas, podendo ser utilizados seus celulares e tabletes, suportados pelos sistemas operacionais Android e IOs, sem falar da execução e banco de dados armazenados em nuvem. O sistema também atende a comunidade, com a identificação das luzes queimadas à medida que os carros se movimenta nas ruas, integrados à companhia de energia elétrica, barateando os custos com energia elétrica.
 
 \section{Disciplinas do SWEBOK}
 \subsection{Requisitos}
@@ -114,9 +117,9 @@ São relatórios que demostram todos os testes efetuados.
 
 \subsection{Manutenção de Software}
 
-O sistema utilizará um framework dirigido por dados e, desta maneira, de acordo com Patil 2016 (Automated Software Testing for High-end Touch Screen Automotive Displays), se beneficiará de uma manutenção facilitada, já que será possível encontrar quais scripts contém componentes comuns para serem atualizados. Ainda de acordo com Patil 2016, Isto resultará num aumento da reusabilidade, proporcionando mais cenários de testes e reduzindo o tempo de desenvolvimento necessário.
+O sistema utilizará um framework dirigido por dados e, desta maneira, se beneficiará de uma manutenção facilitada, já que será possível encontrar quais scripts contém componentes comuns para serem atualizados. Isto resultará num aumento da reusabilidade, proporcionando mais cenários de testes e reduzindo o tempo de desenvolvimento necessário \cite{Patil2016}.
 
-Considerando-se o item anterior e o fato de o sistema necessitar de interação facilitada por parte dos motoristas, a manutenção dos eventuais defeitos do software deverão priorizar a análise de feedbacks dos usuários, como apresentam Kittiya e Pornsiri 2016 (Prioritizing Software Maintenance Plan by Analyzing User Feedback). O método em questão, apresentado na Fig.99, dispõe de 2 partes. A primeira é o processo de extração de palavras-chaves relacionadas a defeitos no software através de linguagem natural utilizando-se relações gramaticais. A segunda parte é o processo de se atribuir o ranking de impacto do defeito utilizando-se algoritmo AHP.
+Considerando-se o item anterior e o fato de o sistema necessitar de interação facilitada por parte dos motoristas, a manutenção dos eventuais defeitos do software deverão priorizar a análise de feedbacks dos usuários \cite{Srewuttanapitikul2016}. O método em questão, apresentado na figura \ref{fig:exampleFig2}, dispõe de 2 partes. A primeira é o processo de extração de palavras-chaves relacionadas a defeitos no software através de linguagem natural utilizando-se relações gramaticais. A segunda parte é o processo de se atribuir o ranking de impacto do defeito utilizando-se algoritmo AHP.
 
 
 \begin{figure}[ht]
@@ -125,15 +128,15 @@ Considerando-se o item anterior e o fato de o sistema necessitar de interação 
 \label{fig:exampleFig2}
 \end{figure}
 
-Por fim, com a finalidade de se reduzir termos redundantes do processo de manutenção da aplicação por análise de feedback do usuário, deverão ser utilizadas as técnicas expostas por Oscar e Andrian 2016  (On the Reduction of Verbose Queries in Text Retrieval Based Software Maintenance) que visam remover termos específicos de consultas em contextos de conceitos baseados em Busca Textual, otimizando o emprego de informação gerada pelo usuário para levantamento de possíveis erros a serem manutenidos.
+Por fim, com a finalidade de se reduzir termos redundantes do processo de manutenção da aplicação por análise de feedback do usuário, deverão ser utilizadas as técnicas que visam remover termos específicos de consultas em contextos de conceitos baseados em Busca Textual, otimizando o emprego de informação gerada pelo usuário para levantamento de possíveis erros a serem manutenidos \cite{Chaparro2016}.
 
 \subsection{Gerenciamento de Configuração de Software}
 
-Dada a característica crítica e de segurança desta aplicação, o gerenciamento de configuração deverá seguir os padrões aplicados pelo IEEE em seu documento 828-1983 (IEEE Standard for Software Configuration Management Plans). Isto visará o provimento de requisitos mínimos quanto à preparação e criação de conteúdo do Plano de Gerenciamento de Configuração do Software.
+Dada a característica crítica e de segurança desta aplicação, o gerenciamento de configuração deverá seguir os padrões aplicados pelo IEEE \cite{Patil2016}. Isto visará o provimento de requisitos mínimos quanto à preparação e criação de conteúdo do Plano de Gerenciamento de Configuração do Software.
 
-A ferramenta a ser utilizada neste processo será determinada de acordo com a teoria de conjunto difuso (fuzzy set) de análise. Desta maneira, a aplicação prática deste processo será a análise qualitativa e a utilização de um método de combinação calculado quantitativo, oferecendo flexibilidade na determinação do sistema de índice de avaliação e seu valor de pesos, como sugerido por Yongchang et al (Fuzzy Decision Analysis of the Software Configuration Management Tools Selection).
+A ferramenta a ser utilizada neste processo será determinada de acordo com a teoria de conjunto difuso (fuzzy set) de análise. Desta maneira, a aplicação prática deste processo será a análise qualitativa e a utilização de um método de combinação calculado quantitativo, oferecendo flexibilidade na determinação do sistema de índice de avaliação e seu valor de pesos \cite{Ren2010}.
 
-Desta maneira, dada a dinâmica e qualidades exigidas para o controle de compartilhamento de carros, uma escolha fundamentada desta ferramenta de gerenciamento propiciará o melhor atendimento das necessidades do sistema. Para esta escolha, ainda de acordo com Yongchang et al (Fuzzy Decision Analysis of the Software Configuration Management Tools Selection), o índice de avaliação deste quesito se resumirá à função, desempenho, custo, serviço e outros quatro fatores de primeiro nível. Dentre eles, a função terá quatro índices de nível 2, o desempenho terá três índices de nível 3. Um diagrama de hierarquia de decisão de seleção pode ser visto na figura \ref{fig:exampleFig3}
+Desta maneira, dada a dinâmica e qualidades exigidas para o controle de compartilhamento de carros, uma escolha fundamentada desta ferramenta de gerenciamento propiciará o melhor atendimento das necessidades do  usuário \cite{Ren2010}. Para esta escolha, o índice de avaliação deste quesito se resumirá à função, desempenho, custo, serviço e outros quatro fatores de primeiro nível. Dentre eles, a função terá quatro índices de nível 2, o desempenho terá três índices de nível 3. Um diagrama de hierarquia de decisão de seleção pode ser visto na figura \ref{fig:exampleFig3}
 
 \begin{figure}[htp]
 \centering
@@ -145,19 +148,20 @@ Desta maneira, dada a dinâmica e qualidades exigidas para o controle de compart
 
 \subsection{Gerenciamento da Engenharia de Software}
 
-Como ferramenta de Gerenciamento de Engenharia de Software para análise de metas de desempenho, utilizaremos a ferramenta “MultiPERF”, baseada no repositório de dados de projeto de software internacional ISBSG, proposto para atribuir metas de desempenho como apresentado no estudo de Vasile, Pierre e Alain 2014 (A White-Box Tool to Set Performance Targets in Software Engineering Management using the ISBSG Repository). A proposta, neste caso, se justifica pelo fato de que a ferramenta “MultiPERF”, baseada em planilhas Excel, se benefica do repositório ISBSG, que por sua vez permite análise de metas através de variadas funções. Desta maneira, procura-se assegurar aos locadores de nossos carros um desempenho satisfatório do aplicativo por eles utilizados.
+Como ferramenta de Gerenciamento de Engenharia de Software para análise de metas de desempenho, utilizaremos a ferramenta “MultiPERF”, baseada no repositório de dados de projeto de software internacional ISBSG, proposto para atribuir metas de desempenho \cite{Stroian2014}. A proposta, neste caso, se justifica pelo fato de que a ferramenta “MultiPERF”, baseada em planilhas Excel, se beneficia do repositório ISBSG, que por sua vez permite análise de metas através de variadas funções. Desta maneira, procura-se assegurar aos locadores de nossos carros um desempenho satisfatório do aplicativo por eles utilizados.
 
-Para um melhor gerenciamento da estimativa de esforços, seguiremos os conceitos expostos na publicação de Velarde et al 2016 (Software Development Effort Estimation based-on Multiple Classifier system and Lines of Code), os quais se comprometem a uma precisão de 71\% na estimativa dos esforços previstos. Dadas as características de nossa equipe de desenvolvimeno, tal qualidade propiciará uma melhor alocação de recursos e confiabilidade na tomada de decisões dentro do planejamento de desenvolvimento.
+Para um melhor gerenciamento da estimativa de esforços, seguiremos os conceitos baseados em multipla classificação do sistema e linhas de códigos, os quais se comprometem a uma precisão de 71\% na estimativa dos esforços previstos. Dadas as características de nossa equipe de desenvolvimeno, tal qualidade propiciará uma melhor alocação de recursos e confiabilidade na tomada de decisões dentro do planejamento de desenvolvimento \cite{Velarde2016}. 
 
-O conjunto de aplicações necessárias para implementação de todo o sistema, o qual atuará em frentes distintas para possibilitar o gerenciamento dos usuários, dos carros, das localidades onde se encontram e dos trajetos por eles percorridos demonstra um vasto leque de participantes no desenvolvimento. Desta maneira, como proposto por Farhan Sarfraz 2009 (Managing for a Successful Project Closure), o término do projeto será identificado como bem sucedido através do emprego de diretrizes que implementarão o envolvimento de toda equipe, comunicação pós-encerramento com todas as partes interessadas, atualizações regulares sobre a execução dos processos restantes. Estas diretrizes terão por objetivo o desencadeamento de um comportamento psicológico positivo de todos os membros assegurando o encerramento com êxito.
+O conjunto de aplicações necessárias para implementação de todo o sistema, o qual atuará em frentes distintas para possibilitar o gerenciamento dos usuários, dos carros, das localidades onde se encontram e dos trajetos por eles percorridos demonstra um vasto leque de participantes no desenvolvimento. Desta maneira, o término do projeto será identificado como bem sucedido através do emprego de diretrizes que implementarão o envolvimento de toda equipe, comunicação pós-encerramento com todas as partes interessadas, atualizações regulares sobre a execução dos processos restantes. Estas diretrizes terão por objetivo o desencadeamento de um comportamento psicológico positivo de todos os membros assegurando o encerramento com êxito \cite{Sarfraz2009}.
 
 
 \subsection{Processo da Engenharia de Software}
 
-De acordo com expectativas da montadora Volkswagen e seu carro Up!, carro a ser usado na frota, o software precisará ter um apelo de relacionamento com os usuários. Para que isto seja alcançado, e no que diz respeito aos processos de engenharia de software, seguiremos as diretrizes de Amal, Christian e Claude 2014 (Implementing and validating SynchSPEM A solution for synchronizing activities and products within a software engineering process), que utiliza o SynchSPEM como um modelo de metadados para monitorar a evolução do desenvolvimento de maneira a se certificar de que haja consitência e coerência na evolução do processo.
-Deverá ser empregado o modelo AHAA – Agile, Hybrid Assesment Method for Automotive, definido por Fergal, Minna e Ita 2008 (AHAA –Agile, Hybrid Assessment Method for Automotive, Safety Critical SMEs) para combinar o ciclo de vida do desenvolvimento do software com um desejado aumento da qualidade do produto desenvolvido. Este método, que faz uso do “Automotive SPICE Process Reference Model, se adequa às exigências aos fornecedores da indústria automobilística no que se refere a processos de software. 
+De acordo com expectativas da montadora Volkswagen e seu carro Up!, carro a ser usado na frota, o software precisará ter um apelo de relacionamento com os usuários. Para que isto seja alcançado, e no que diz respeito aos processos de engenharia de software, seguiremos as diretrizes que utiliza o SynchSPEM como um modelo de metadados para monitorar a evolução do desenvolvimento de maneira a se certificar de que haja consistência e coerência na evolução do processo \cite{Rochd2014}. 
+\\
+Deverá ser empregado o modelo AHAA – Agile, Hybrid Assesment Method for Automotive, que é definido para combinar o ciclo de vida do desenvolvimento do software com um desejado aumento da qualidade do produto desenvolvido. Este método, que faz uso do \textit{Automotive SPICE Process Reference Model}, se adequa às exigências aos fornecedores da indústria automobilística no que se refere a processos de software \cite{McCaffery2008}. 
 
-Para se adequar às imposições da indústria automotiva no que se refere à interação do usuário, a segurança operacional deverá ser levada em consideração, e para isto o processo de software seguirá imposições de agências reguladoras, objetivando um melhor monitoramento da qualidade do software através de seu desenvolvimento. Abaixo vemos a Fig.99, ainda de Fergal, Minna e Ita, ilustrando os componentes que deverão ter especial atenção para determinar uma melhor aproximação ao modelo de maturidade e atingir a avaliação desejada.
+Para se adequar às imposições da indústria automotiva no que se refere à interação do usuário, a segurança operacional deverá ser levada em consideração, e para isto, o processo de software seguirá imposições de agências reguladoras, objetivando um melhor monitoramento da qualidade do software através de seu desenvolvimento. Abaixo vemos a figura \ref{fig:exampleFig4}, ilustrando os componentes que deverão ter especial atenção para determinar uma melhor aproximação ao modelo de maturidade e atingir a avaliação desejada.
 
 \begin{figure}[ht]
 \centering
@@ -168,55 +172,63 @@ Para se adequar às imposições da indústria automotiva no que se refere à in
 
 \subsection{Modelos e Métodos na Engenharia de Software}
 
-O projeto UP! Sharing, será desenvolvido de maneira organizada e sistemática para garantir a entrega do produto final utilizando os métodos e ferramentas de engenharia de software adequados. 
-As ferramentas da engenharia de software fornecem suporte automatizado ou semiautomatizado para o processo e para os métodos. Quando as ferramentas são integradas, de modo que as informações criadas por uma ferramenta possam ser utilizadas por outra, é estabelecido um sistema para o suporte ao desenvolvimento de software.
-\cite{pressman2016engenharia}
+Para organizar as atividades na linha do tempo, e permitir avaliar o esforço necessário de acordo com os recursos humanos e manteriais disponíveis e conhecer caminho crítico do projeto, será utilizado os recursos disponíveis na ferramenta MSProject. O projeto de software UP! Sharing, será desenvolvido de maneira organizada e sistemática para garantir a entrega do produto final utilizando os métodos e ferramentas de engenharia de software adequados. As ferramentas da engenharia de software fornecem suporte automatizado ou semiautomatizado para o processo e para os métodos \cite{Pressman}.
 
-Os métodos da engenharia de software fornecem as informações técnicas para desenvolver software. Os métodos envolvem uma ampla variedade de tarefas, que incluem: comunicação, análise de requisitos, modelagem de projeto, construção de programa, testes e suporte. Os métodos da engenharia de software se baseiam em um conjunto de princípios básicos que governam cada área da tecnologia e incluem atividades de modelagem e outras técnicas descritivas.
+No modelo de gestão ágil, que será utilizado no projeto UP! Sharing, teremos o papel do \textit{Scrum Master} para gerenciar as atividades de maneira iterativa e incremental com entrega contínua ao final de cada período de 3 semanas \textit{"Sprint"}. O escopo de cada entrega será definida a partir das atividades identificadas, definidas, priorizadas e estimadas gerando o \textit{Product Backlog}. Uma versão funcional do software é testada e liberada em cada incremento. As reuniões diárias \textit{Daily Scrum meentings} garante que o trabalho esteja de acordo com o plano \cite{Swebok}.  
 
-O método ágil para gestão de projetos apresenta um modelo mais amigável de gestão que outros por este motivo, foi definido como sendo mais adequado para o projeto. O scrum master gerencia as atividades de maneira incremental que recebe o nome de Sprint e não pode durar mais de 30 dias. A lista do Product Backlog Item (PBI) é gerada a partir das atividades que são identificadas, definidas, priorizadas e estimadas. Uma versão funcional do software é testada e liberada em cada incremento. As reuniões diárias Daily Scrum meentings garante que o trabalho esteja de acordo com o plano. \cite{Bourque2014}
 
 \begin{figure}[htp]
 \centering
-\includegraphics[scale=.8] {ScrumModel.png}
-\caption{O Scrum como mostrado na figura acima é um quadro de gerenciamento de projetos de propósito geral que é aplicável a qualquer projeto com prazos agressivos com requisitos complexos e um grau de singularidade \cite{rees2002feasible}}
+\includegraphics[scale=.8]{ScrumModel.png}
+\caption{Quadro de gerenciamento de projetos de propósito geral}
 \label{fig:exampleFig5}
 \end{figure}
 
-O termo Scrum originalmente deriva de uma estratégia no jogo de rugby onde denota "obter uma bola fora de jogo de volta para o jogo" com o trabalho em equipe. O Scrum depende do auto-empenho, da auto-organização e da emergência em vez de medidas autoritárias. O Scrum é adequado para pequenas equipes de menos de 10 engenheiros. O processo Scrum inclui 3 fases: pré-jogo, desenvolvimento e pós-jogo.
+Seguindo as diretivas do modelo de gestão ágil, conforme demonstrado na figura \ref{fig:exampleFig5} acima, será respeitado as tarefas de acordo com cada fase do ciclo de vida. O \textit{pré-jogo}, \textit{desenvolvimento} e \textit{pós-jogo}.
 
-A \textbf{fase pré-jogo} inclui 2 subfases:
-    
-A primeira subtarefa, denominada \textbf{planejamento} inclui a definição do sistema que está sendo desenvolvido. É criada uma lista de backlog de produtos contendo todos os requisitos conhecidos.
 
-A segunda subtarefa denominada \textbf{arquitetura} trata o design de alto nível do sistema, incluindo a arquitetura e é planejada com base nos itens atuais no \textit{Product Backlog}.
-    
-Na \textbf{fase de desenvolvimento}, o sistema é desenvolvido em Sprints que são ciclos iterativos onde a funcionalidade é desenvolvida ou aprimorada para produzir novos incrementos. Cada Sprint inclui: Requisitos, Análise, Design, Evolução e fases de entrega.
+A fase \textbf{pré-jogo} inclui 2 subfases. A primeira subtarefa, denominada \textbf{planejamento} incluirá a definição do sistema UP! Sharing em desenvolvimento. Nesta subtarefa será criada a lista com todos os requisitos conhecidos para alimentação do \textit{product backlog}. A segunda subtarefa denominada \textbf{arquitetura} tratará o design de alto nível do sistema, incluindo a arquitetura e será planejada com base nos itens do \textit{Product Backlog}.
+ 
+Na \textbf{fase de desenvolvimento}, o sistema será construído em \textit{Sprints} que são ciclos iterativos onde a funcionalidade será desenvolvida ou aprimorada para produzir novos incrementos. Cada \textit{Sprint} inclui: \textit{Requisitos, Análise, Design, Evolução e Entrega}.
 
-A \textbf{fase pós-jogo} contém o encerramento do lançamento, incluindo tarefas como integração, testes de sistema e documentação. \cite{Kumar2014}
+A \textbf{fase pós-jogo} contém o encerramento do projeto, incluindo tarefas como integração, testes de sistema e documentação. \cite{Kumar2014}
 
 
 \subsection{Qualidade de Software}
 
-Segundo a norma ISO 9000 (versão 2000), qualidade é "o grau em que um conjunto de características inerentes a um produto, processo ou sistema e cumpre os requisitos inicialmente estipulados para estes". Já \cite{Juran1998}, tem duas definições para qualidade "a característica dos produtos que atendem as necessidades dos clientes, e, assim, proporcionar a satisfação do mesmo" e "qualidade é a ausência de deficiências"
+Para que o sistema possa atender as características de qualidade exigidas pela indústria automotiva, as especificações técnicas previstas na norma \textbf{ISO/TS 16949} \cite{ISOTS} serão observadas. Esta norma especifica os requisitos do sistema da qualidade para a concepção, desenvolvimento, produção, instalação e manutenção de produtos automotivos e satisfaz a exigência da Volkswagen sobre os seus fornecedores.
 
-A definição específica sobre qualidade de software mais difundida é a encontrada nas normas ISO/EIC 9126-1 e ISO/IEC 25010, para as quais qualidade é "a capacidade do produto de software em satisfazer as necessidades implícitas e explícitas quando usado em condições específicas".
+Os procedimentos de verificação e validação de software apresentados no item \textit{Teste de Software}, serão aplicados para avaliar a qualidade do produto de software segundo o ponto de vista dos usuários conforme prevê a norma \textbf{ISO 9000} \cite{ISO9000}, qualidade é "o grau em que um conjunto de características inerentes a um produto, processo ou sistema e cumpre os requisitos inicialmente estipulados para estes". 
 
-Para que o sistema possa atender as características de qualidade exigidas pela indústria automotiva, as especificações técnicas previstas na norma ISO/TS 16949 serão observadas. Esta norma especifica os requisitos do sistema da qualidade para a concepção, desenvolvimento, produção, instalação e manutenção de produtos automotivos e satisfaz a exigência da Volkswagen sobre os seus fornecedores.
+Para medir a qualidade do software desenvolvido no projeto UP! Sharing, será observados os seguintes pilares:
+
+\textbf{Alcance:} deve ser capaz de lidar com várias tecnologias. A maioria dos aplicativos modernos contém vários idiomas e sistemas que são ligados entre si de forma complexa.
+
+\textbf{Profundidade:} deve ser capaz de gerar mapas completos e detalhados da arquitetura do aplicativo do Graphical User Interface (GUI), ferramenta de captura, processamento e análise de imagem, para o banco de dados. Sem essa detalhada arquitetura, seria impossível obter contextualização da aplicação.
+
+\textbf{ Tornar o conhecimento explícito de engenharia de software:} deve ser capaz de verificar a aplicação inteira contra centenas de padrões de implementação que codificam as melhores práticas de engenharia.
+
+\textbf{Métricas acionáveis:} as métricas de qualidade não devem apenas informar, mas também orientar sobre como realizar a melhoria da qualidade do software, mostrando o que fazer primeiro, como fazê-lo, próximos passos etc.
+
+\textbf{Automatização:} finalmente, deve ser capaz de realizar todos os pontos descritos acima de forma automatizada. Nenhum profissional ou equipe pode fazer essa tarefa, muito menos fazê-la em um curto espaço de tempo.
+
+É importante medir a qualidade do software, mas é igualmente
+importante executar a atividade de forma correta. Essa ação é muito útil no desenvolvimento de software, mas, muitas vezes, é melhor não ter medição alguma do que contar com uma errada \cite{COMPUTERWORLD}.
 
 \subsection{Práticas Engenharia de Software}
 
-A Volkswagen espera que seus produtos estejam enquadrados em rígidos códigos de ética praticados no mercado. Desta maneira, para se alcançar este objetivo durante todo o processo, levaremos em consideração o trabalho desenvolvido por Simon Rogerson 2002 (The Software Engineering Code of Ethics and Professional Practice a case for being proactive), de maneira que possamos usufruir dos benefícios de suas recomendações, bem como estar em conformidade com as diretrizes da contratante. No artigo apresentado, daremos especial atenção à recomendação de produção de material bilingue, através de automação de procura de termos e eventuais traduções para os idiomas especificados. 
+A Volkswagen espera que seus produtos estejam enquadrados em rígidos códigos de ética praticados no mercado. Desta maneira, para se alcançar este objetivo durante todo o processo, levaremos em consideração o trabalho desenvolvido 
+por Simon \cite{rogerson2002software}, de maneira que possamos usufruir dos benefícios de suas recomendações, bem como estar em conformidade com as diretrizes da contratante. No artigo apresentado, daremos especial atenção à recomendação de produção de material bilingue, através de automação de procura de termos e eventuais traduções para os idiomas especificados. 
 
-Com a finalidade de oferecer uma documentação de software de qualidade e tendo em mente os desafios desta tarefa, ainda mais em nossa língua portuguesa, e diante das características dos processos de desenvolvimento de softwares que em geral utilizam a língua inglesa, procuraremos gerenciar estes conflitos de idiomas através das recomendações do artigo de Christoph, Carlos e Fernando 2015 (Challenges in Analyzing Software Documentation in Portuguese). Com isto, procuraremos apresentar meios de documentar o software de maneira mais efetiva e eficaz para os interessados no processo.
+Com a finalidade de oferecer uma documentação de software de qualidade e tendo em mente os desafios desta tarefa, ainda mais em nossa língua portuguesa, e diante das características dos processos de desenvolvimento de softwares que em geral utilizam a língua inglesa, procuraremos gerenciar estes conflitos de idiomas através das recomendações do artigo de Christoph, Carlos e Fernando \cite{Treude2015}. Com isto, procuraremos apresentar meios de documentar o software de maneira mais efetiva e eficaz para os interessados no processo.
 
-Dada à característica da contratante, uma montadora de automóveis multinacional com necessidade de interação com equipes multiculturais ao redor do planeta, nosso objetivo será buscar um modelo sensível as diferentes culturas locais e seus desafios únicos. Para isto, tomaremos como base a publicação do painel de discussão de Rajesh e Vivek 2009 (Evolving Software Models for Global Organizations), que tem como objetivo discutir modelos que atendam às necessidades de organizações globais.
+Dada à característica da contratante, uma montadora de automóveis multinacional com necessidade de interação com equipes multiculturais ao redor do planeta, nosso objetivo será buscar um modelo sensível as diferentes culturas locais e seus desafios únicos. Para isto, tomaremos como base a publicação do painel de discussão, que tem como objetivo discutir modelos que atendam às necessidades de organizações globais \cite{Subramanyan2009}.
 
 \subsection{Economia na Engenharia de Software}
 
-De acordo com Jianglin, Hongyi e Yan-Fu 2015 (An Empirical Study of the Impact of Project Factors on Software Economics), tomaremos nossas decisões econômicas baseadas em quatro elementos importantes: produtividade, qualidade, esforço e “time-to-market”. Seguindo seus preceitos, poderemos contruir um relacionamento global das variáveis apresentadas. Como resultado deste processo proposto, alcançaremos melhores parâmetros quanto ao tamanho do time a ser empregado, o impacto em qualidade e produtividade da linguagem de programação a ser utilizada, a produtividade possível de ser alcançada e o tamanho previsto do software que poderá impactar diretamente no desenvolvimento e por consequência em sua data de entrega.
+De acordo com Jianglin, Hongyi e Yan-Fu \cite{Huang2015} , tomaremos nossas decisões econômicas baseadas em quatro elementos importantes: produtividade, qualidade, esforço e “time-to-market”. Seguindo seus preceitos, poderemos contruir um relacionamento global das variáveis apresentadas. Como resultado deste processo proposto, alcançaremos melhores parâmetros quanto ao tamanho do time a ser empregado, o impacto em qualidade e produtividade da linguagem de programação a ser utilizada, a produtividade possível de ser alcançada e o tamanho previsto do software que poderá impactar diretamente no desenvolvimento e por consequência em sua data de entrega.
 
-Como parâmetro decisório quanto ao julgamento de quando nosso software poderá ser considerado “bom o suficiente”, seguiremos o estudo de Susan e Joanne 2005 (Is My Software “Good Enough” to Release – A Probabilistic Assessment Methodology), o qual fornecerá subsídio para avaliarmos quando o mesmo estará pronto para entrega. A Fig.99 abaixo demonstra um modelo dos principais componentes representando atividades e artefatos identificados através de resultados experimentais publicados e literatura existente, os quais servirão como base para indicação efetiva da qualidade do software, seus processos para popular o modelo e métodos de análise de contribuições de evidências individuais que representaram a base para a conclusão de “Bom o Bastante para Entrega”, como apontado pelas autoras.
+Como parâmetro decisório quanto ao julgamento de quando nosso software poderá ser considerado “bom o suficiente”, seguiremos o estudo de Susan e Joanne \cite{donohue2005}, o qual fornecerá subsídio para avaliarmos quando o mesmo estará pronto para entrega. A figura \ref{fig:exampleFig6} abaixo demonstra um modelo dos principais componentes representando atividades e artefatos identificados através de resultados experimentais publicados e literatura existente, os quais servirão como base para indicação efetiva da qualidade do software, seus processos para popular o modelo e métodos de análise de contribuições de evidências individuais que representaram a base para a conclusão de “Bom o Bastante para Entrega”, como apontado pelas autoras.
 
 \begin{figure}[htp]
 \centering
